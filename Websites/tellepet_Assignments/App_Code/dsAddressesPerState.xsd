@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAddressesPerState" targetNamespace="http://tempuri.org/dsAddressesPerState.xsd" xmlns:mstns="http://tempuri.org/dsAddressesPerState.xsd" xmlns="http://tempuri.org/dsAddressesPerState.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="tellepetDB" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="tellepetDB (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.tellepetDB.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tStateTableAdapter" GeneratorDataComponentClassName="tStateTableAdapter" Name="tState" UserDataComponentName="tStateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="tellepetDB (Web.config)" DbObjectName="tellepet.dbo.tState" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        COUNT(tStreetNum.StreetNumID) AS [Number Of Houses Per State], tState.StateID, tState.Abbreviation
+FROM            tStreetNum INNER JOIN
+                         tStreet ON tStreetNum.StreetID = tStreet.StreetID INNER JOIN
+                         tCity ON tStreet.CityID = tCity.CityID INNER JOIN
+                         tState ON tCity.StateID = tState.StateID
+GROUP BY tState.StateID, tState.Abbreviation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="StateID" DataSetColumn="StateID" />
+              <Mapping SourceColumn="Abbreviation" DataSetColumn="Abbreviation" />
+              <Mapping SourceColumn="Number Of Houses Per State" DataSetColumn="Number Of Houses Per State" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAddressesPerState" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsAddressesPerState" msprop:Generator_UserDSName="dsAddressesPerState">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tState" msprop:Generator_TableClassName="tStateDataTable" msprop:Generator_TableVarName="tabletState" msprop:Generator_RowChangedName="tStateRowChanged" msprop:Generator_TablePropName="tState" msprop:Generator_RowDeletingName="tStateRowDeleting" msprop:Generator_RowChangingName="tStateRowChanging" msprop:Generator_RowEvHandlerName="tStateRowChangeEventHandler" msprop:Generator_RowDeletedName="tStateRowDeleted" msprop:Generator_RowClassName="tStateRow" msprop:Generator_UserTableName="tState" msprop:Generator_RowEvArgName="tStateRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnStateID" msprop:Generator_ColumnPropNameInRow="StateID" msprop:Generator_ColumnPropNameInTable="StateIDColumn" msprop:Generator_UserColumnName="StateID" type="xs:int" />
+              <xs:element name="Abbreviation" msprop:Generator_ColumnVarNameInTable="columnAbbreviation" msprop:Generator_ColumnPropNameInRow="Abbreviation" msprop:Generator_ColumnPropNameInTable="AbbreviationColumn" msprop:Generator_UserColumnName="Abbreviation">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Number_x0020_Of_x0020_Houses_x0020_Per_x0020_State" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNumber_Of_Houses_Per_State" msprop:Generator_ColumnPropNameInRow="Number_Of_Houses_Per_State" msprop:Generator_ColumnPropNameInTable="Number_Of_Houses_Per_StateColumn" msprop:Generator_UserColumnName="Number Of Houses Per State" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tState" />
+      <xs:field xpath="mstns:StateID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,38 @@
+﻿<%--
+    Evan Tellep
+    Prof. Bill Nicholson
+    ASP.NET
+    Mevtric (Final)
+    4/26/2017
+    Ref: A lot of MSDN, Stack Overflow, and some Code Project
+--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FinalMaster.master.cs" Inherits="tellepet_Final_FinalMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Mevtrics</title>
+    <link href="Styles/Global.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="fMevtrics" runat="server">
+    <div>
+        <div id="header">
+            <h1>Mevtrics</h1>
+            <nav>
+                <ul>
+                    <li><a href="<%= ResolveUrl("~/Default.aspx")%>" role="button"><div class="button">Default</div></a></li>
+                    <li><a href="./" role="button"><div class="button">Home</div></a></li>
+                    <li><a href="Construct.aspx" role="button"><div class="button">Construct</div></a></li>
+                </ul>
+            </nav>
+        </div>
+        <asp:ContentPlaceHolder id="body" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

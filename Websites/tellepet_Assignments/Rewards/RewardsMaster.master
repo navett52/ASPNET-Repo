@@ -1,0 +1,48 @@
+﻿<%--
+    Evan Tellep
+    Bill Nicholson
+    ASP.NET
+    2/1/2017
+    Assignment02
+    Making a header for this assignment
+--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="RewardsMaster.master.cs" Inherits="Rewards_RewardsMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Rewards</title>
+    <!-- Adding the relevant css sheets into this master page -->
+    <link href="../App_Themes/bootstrap.css" rel="stylesheet" />
+    <link href="../App_Themes/Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    <!-- Creating a headr for my pages including an image and some navigation -->
+<body>
+    <form id="form1" runat="server">
+        <div class="jumbotron align-content-center">
+            <div class="row">
+                <div class="col-lg-4" id="logo">
+                    <img src="/App_LocalResources/IlarisUnboundConcept.png" height="100" style="width: 173px"/>
+                </div>
+                <div class="col-lg-8">
+                    <ul>
+                        <li>
+                            <a class="btn btn-primary" href="../Default.aspx" role="button">Home</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary" href="Default.aspx" role="button">Rewards</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder id="RewardsBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿/*<%--
+    Evan Tellep
+    Bill Nicholson
+    ASP.NET
+    3/7/2017
+    Midterm
+    CSS to make my midterm look presentable.
+--%>*/
+#content {
+    text-align: center;
+}
+
+.question {
+    color: white;
+}
+
+#body_lblResult {
+    color: white;
+    font-size: 2em;
+}

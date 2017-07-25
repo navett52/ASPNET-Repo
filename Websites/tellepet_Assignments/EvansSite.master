@@ -1,0 +1,50 @@
+﻿<%--
+    Evan Tellep
+    Bill Nicholson
+    ASP.NET
+    1/25/2017
+    Assignment01
+    Create a page to hold our assignments
+--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="EvansSite.master.cs" Inherits="EvansSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="App_Themes/bootstrap.css" rel="stylesheet" />
+    <link href="App_Themes/Style.css" rel="stylesheet" />
+    <title>Evan's Site</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- Start header template -->
+    <form id="form1" runat="server">
+    <div id="content">
+        <header>
+            <div class="jumbotron text-center" id="header">
+            <h1>Evan's Site!</h1>
+            <nav>
+                <ul class="nav container">
+                    <li>
+                        <a class="btn btn-primary" href="<%= ResolveUrl("~/Default.aspx")%>" role="button">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <!-- End header template -->
+        <asp:ContentPlaceHolder id="body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <!-- Start footer -->
+        <footer class="text-center">
+            <p>Site constructed by Evan Tellep</p>
+        </footer>
+        <!-- End footer -->
+    </div>
+    </form>
+</body>
+</html>

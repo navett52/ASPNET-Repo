@@ -1,0 +1,32 @@
+﻿<%--
+    Evan Tellep and Jake Reilman
+    Prof. Bill Nicholson
+    ASP.NET
+    Assignment 07
+    3/22/17
+    Assn Desc: Creating web form to generate reports
+    Ref:  
+--%>
+
+<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Evan and Jake's Report Generator!</title>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="formAssn07Master" runat="server">
+        <div>
+            <div id="wrapper">
+                <link href="App_Theme/StyleSheet.css" rel="stylesheet" />
+                <h1>Evan and Jake's Report Generator!
+            </h1>
+            </div>
+        </div>
+            <asp:ContentPlaceHolder ID="cphBody" runat="server" />       
+    </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿/*<%--
+    Evan Tellep
+    Bill Nicholson
+    ASP.NET
+    1/25/2017
+    Styles for all pages
+--%>*/
+
+
+
+body {
+    background-color: rgba(50, 50, 50, 1);
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+#mainContent {
+    min-height: 73.5vh;
+}
+
+.row {
+    background-color: white;
+}
+
+#mainColumn {
+    border-width: 0px 20px 0px 20px;
+    border-color: rgba(2, 119, 216, 1);
+    border-style: solid;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > li {
+    display: inline;
+}
+
+.assn-btn {
+    margin: 5px 0px;
+}
+
+footer {
+    background-color: rgba(236, 238, 239, 1);
+    //color: rgba(2, 60, 60, 1);
+    padding: 5px 0px;
+}
+
+footer > p {
+    margin: 0;
+}

@@ -1,0 +1,49 @@
+﻿/*<%--
+    Evan Tellep
+    Bill Nicholson
+    ASP.NET
+    2/1/2017
+    Assignment02
+    CSS for assignment 2
+--%>*/
+
+table {
+    width: 50%;
+    table-layout: fixed;
+    margin: auto;
+}
+
+#enter {
+    text-align: center;
+    width: 100%;
+}
+
+.rewardBtn {
+    text-align: center;
+    width: 30%;
+}
+
+.rewardBtn:hover {
+    background-color: dimgrey;
+}
+
+.rewardBtnCSharp {
+    width: 100%;
+}
+
+.jumbotron {
+    text-align: center;
+    font-size: 48px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > li {
+    display: inline;
+}
+
+.row {
+    background-color: none;
+}

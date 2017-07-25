@@ -1,0 +1,19 @@
+﻿body {
+    background-color : #858484;
+    align-content : center;
+}
+#wrapper{
+    background-color : #c6c6c6;
+    text-align : center;
+    margin-left : auto;
+    margin-right : auto;
+    width : 55%;      
+    height : 800px;
+}
+#calendar{
+    background-color : #c6c6c6;
+    width : 250px;    
+    margin-left : auto;
+    margin-right : auto;
+    text-align : center;
+}

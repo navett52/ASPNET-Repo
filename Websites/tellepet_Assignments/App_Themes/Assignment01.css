@@ -1,0 +1,20 @@
+﻿/*<%--
+    Evan Tellep
+    Bill Nicholson
+    ASP.NET
+    1/25/2017
+    Styles for the Assignment01 page
+--%>*/
+
+.vertical-center {
+    margin: 50px 0px;
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 62vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+#body_lblAnswer {
+    width: 100%;
+    font-size: 3em;
+}

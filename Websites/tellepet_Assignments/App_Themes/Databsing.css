@@ -1,0 +1,41 @@
+﻿/*
+    <%--
+    Evan Tellep
+    Bill Nicholson
+    ASP.NET
+    2/22/2017
+    Assignment05
+    Display the selected enchantments on a summary page.
+--%>
+*/
+
+.container {
+    color: white;
+}
+
+.list {
+    width: 100px;
+    height: 100px;
+}
+
+#body_lblTitle {
+    display: inline-block;
+    margin: auto;
+}
+
+#buttons {
+    width: 500px;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+}
+
+#submit {
+    width: 100%;
+}
+
+#body_btnSubmit {
+    width: 100%;
+}

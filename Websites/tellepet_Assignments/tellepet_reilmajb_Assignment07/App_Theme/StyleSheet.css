@@ -1,0 +1,42 @@
+﻿/*
+<%--
+    Evan Tellep and Jake Reilman
+    Prof. Bill Nicholson
+    ASP.NET
+    Assignment 07
+    3/22/17
+    Assn Desc: Creating web form to generate reports
+    Ref:  
+--%>
+*/
+
+body {
+    background-color: #ffd29c;
+}
+
+h1 {
+    background-color: #ff8c00;
+    color: #FFFFFF;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000000;
+    border: 2px solid black;
+}
+
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+#storeList {
+    background-color: white;
+    max-height: 150px;
+    max-width: 300px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    border: 1px solid gray;
+}
+
+.center{
+    text-align: center;
+}
